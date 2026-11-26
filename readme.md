@@ -95,9 +95,7 @@ Le système contribuera à simplifier l'organisation et le traitement des récla
 
 ## 🔮 Perspectives d'amélioration
 
-- Ajouter une base de données pour enregistrer les réclamations.
-- Permettre aux administrateurs de consulter les réclamations.
-- Ajouter un système de suivi de l'état des réclamations.
+- Ajouter une base de données pour enregistrer les réclamations. 
 - Développer un tableau de bord avec des statistiques.
 
 
