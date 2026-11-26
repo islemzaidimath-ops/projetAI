@@ -1,0 +1,307 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Réclamations Citoyennes</title>
+
+    <link rel="stylesheet" href="/static/style.css">
+
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <header class="header">
+
+        <div class="logo">
+
+            <div class="logo-icon">RC</div>
+
+            <h2>Réclamations Citoyennes</h2>
+
+        </div>
+
+        <nav>
+
+            <a href="#accueil">Accueil</a>
+
+            <a href="#categories">Catégories</a>
+
+            <a href="#depot">Déposer une réclamation</a>
+
+        </nav>
+
+    </header>
+
+
+    <!-- ACCUEIL -->
+    <main>
+
+        <section class="hero" id="accueil">
+
+            <div class="hero-content">
+
+                <span class="tag">PLATEFORME CITOYENNE</span>
+
+                <h1>
+                    Votre voix compte.
+                    <br>
+                    <span>Nous vous écoutons.</span>
+                </h1>
+
+                <p>
+
+                    Déposez facilement votre réclamation.
+
+                    Notre système intelligent analyse votre texte
+                    et identifie automatiquement le service concerné.
+
+                </p>
+
+                <a href="#depot" class="hero-button">
+
+                    Déposer une réclamation
+
+                </a>
+
+            </div>
+
+            <div class="hero-visual">
+
+                <div class="visual-circle">
+
+                    <span>✉</span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- CATEGORIES -->
+        <section class="categories" id="categories">
+
+            <div class="section-heading">
+
+                <span class="tag">NOS SERVICES</span>
+
+                <h2>Les domaines de réclamation</h2>
+
+                <p>
+                    Votre réclamation sera automatiquement orientée
+                    vers l'une des cinq catégories.
+                </p>
+
+            </div>
+
+
+            <div class="category-grid">
+
+                <div class="category-card">
+
+                    <span>🚌</span>
+
+                    <h3>Transport</h3>
+
+                </div>
+
+                <div class="category-card">
+
+                    <span>🏥</span>
+
+                    <h3>Santé</h3>
+
+                </div>
+
+                <div class="category-card">
+
+                    <span>🌱</span>
+
+                    <h3>Environnement</h3>
+
+                </div>
+
+                <div class="category-card">
+
+                    <span>🏛️</span>
+
+                    <h3>Administration</h3>
+
+                </div>
+
+                <div class="category-card">
+
+                    <span>🏗️</span>
+
+                    <h3>Infrastructure</h3>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- FORMULAIRE -->
+        <section class="form-section" id="depot">
+
+            <div class="form-container">
+
+                <div class="form-heading">
+
+                    <span class="tag">ESPACE CITOYEN</span>
+
+                    <h2>Déposer une réclamation</h2>
+
+                    <p>
+
+                        Décrivez votre problème de manière claire
+                        et précise.
+
+                    </p>
+
+                </div>
+
+
+                <form id="complaintForm">
+
+                    <label for="complaint">
+
+                        Votre réclamation
+
+                    </label>
+
+                    <p class="form-info">
+
+                        Veuillez saisir une seule réclamation par formulaire.
+                        Si vous avez plusieurs problèmes, déposez-les séparément.
+
+                    </p>
+
+
+                    <textarea
+
+                        id="complaint"
+
+                        placeholder="Décrivez un seul problème..."
+
+                        minlength="10"
+
+                        maxlength="3000"
+
+                        required
+
+                    ></textarea>
+
+
+                    <div class="form-footer">
+
+                        <span id="counter">
+
+                            0 / 3000 caractères
+
+                        </span>
+
+                        <button type="submit" id="submitBtn">
+
+                            Analyser ma réclamation →
+
+                        </button>
+
+                    </div>
+
+                </form>
+
+
+                <!-- CHARGEMENT -->
+                <div id="loading" class="loading hidden">
+
+                    <div class="loader"></div>
+
+                    <p>Analyse de votre réclamation en cours...</p>
+
+                </div>
+
+
+                <!-- RESULTAT -->
+                <div id="result" class="result hidden">
+
+                    <div class="success-icon">✓</div>
+
+                    <h3>Réclamation analysée !</h3>
+
+                    <p class="result-label">
+
+                        Catégorie identifiée :
+
+                    </p>
+
+                    <div id="category" class="category-result"></div>
+
+                    <p id="description"></p>
+
+                    <div class="thank-you">
+
+                        <strong>Merci pour votre participation !</strong>
+
+                        <p>
+                            Votre réclamation a été analysée avec succès.
+                        </p>
+
+                    </div>
+
+                    <button
+
+                        type="button"
+
+                        id="newComplaint"
+
+                        class="new-button"
+
+                    >
+
+                        Déposer une autre réclamation
+
+                    </button>
+
+                </div>
+
+
+                <!-- ERREUR -->
+                <div id="error" class="error hidden"></div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <h3>Réclamations Citoyennes</h3>
+
+        <p>
+            Une plateforme intelligente au service des citoyens.
+        </p>
+
+        <p>Projet LMI3 - Année universitaire 2026/2027</p>
+
+        <p>Zaidi Islem & Hannachi Oumayma</p>
+
+    </footer>
+
+
+    <script src="/static/script.js"></script>
+
+</body>
+
+</html>

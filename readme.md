@@ -1,10 +1,10 @@
 # Classification automatique des réclamations des citoyens
 
 ## 👨‍🎓 Auteurs
-Zaidi islem & Hannachi Oumayma
+Zaidi Islem & Hannachi Oumayma
 
 ## 🎓 Classe
-3ème année licence Mathématiques et informatiques
+3ème année Licence Mathématiques et Informatique (LMI3)
 
 ## 🎯 Objectif du projet
 
@@ -14,21 +14,23 @@ L'objectif principal est de faciliter le traitement des réclamations et de perm
 
 ## ⚙️ Fonctionnalités principales
 
-Le site web permettra de :
+Le site web permet de :
 
-📝 Remplir un formulaire pour déposer une réclamation
+📝 Remplir un formulaire pour déposer une réclamation.
 
-📥 Envoyer et traiter les réclamations des citoyens
+📥 Envoyer et enregistrer les réclamations des citoyens.
 
-🤖 Analyser automatiquement le texte de la réclamation
+🤖 Analyser automatiquement le texte de la réclamation.
 
-🏷️ Identifier la catégorie correspondante
+🏷️ Identifier la catégorie correspondante grâce au Machine Learning.
 
-✅ Afficher un message de confirmation et de remerciement après la soumission
+✅ Afficher un message de confirmation et de remerciement après la soumission.
+
+📊 Générer des statistiques à partir des réclamations enregistrées.
 
 ## 📂 Catégories des réclamations
 
-Le système permettra de classer les réclamations selon les catégories suivantes :
+Le système permet de classer les réclamations selon les catégories suivantes :
 
 | Catégorie | Description |
 |---|---|
@@ -48,11 +50,13 @@ Le système permettra de classer les réclamations selon les catégories suivant
 
 4️⃣ La catégorie correspondante est identifiée.
 
-5️⃣ Un message de remerciement confirme la soumission de la réclamation.
+5️⃣ La réclamation et sa catégorie sont enregistrées dans PostgreSQL.
+
+6️⃣ Un message de remerciement confirme la soumission de la réclamation.
 
 ## 🖥️ Interface utilisateur
 
-Le site proposera une interface moderne et intuitive comprenant :
+Le site propose une interface moderne et intuitive comprenant :
 
 - Une page d'accueil présentant le service.
 - Un formulaire simple pour saisir les réclamations.
@@ -61,49 +65,74 @@ Le site proposera une interface moderne et intuitive comprenant :
 
 ## 🧠 Classification automatique
 
-Le système utilisera des techniques d'intelligence artificielle et de traitement automatique du langage naturel (NLP) pour analyser les réclamations.
+Le système utilise des techniques d'intelligence artificielle et de traitement automatique du langage naturel (NLP) pour analyser les réclamations.
 
-L'analyse permettra d'identifier les mots et les expressions importants dans le texte afin de déterminer automatiquement la catégorie correspondante.
+Un modèle de Machine Learning est entraîné à partir d'un ensemble de données afin de déterminer automatiquement la catégorie correspondante.
 
-La classification sera effectuée sans afficher les mots-clés ou les critères internes utilisés par le système.
+La classification est effectuée sans afficher les mots-clés ou les critères internes utilisés par le système.
 
 ## 🛠️ Technologies utilisées
 
-- **Python** : développement de la partie intelligente et classification des réclamations.
+- **Python** : développement du backend et de la partie intelligente.
+- **FastAPI** : développement de l'API.
 - **HTML** : structure des pages web.
 - **CSS** : conception d'une interface moderne et esthétique.
 - **JavaScript** : gestion des interactions avec l'utilisateur.
-- **Machine Learning / NLP** : analyse et classification automatique des textes.
-- **Docker** : conteneurisation et exécution de l'application.
+- **Scikit-learn** : entraînement et classification automatique.
+- **Pandas** : manipulation des données.
+- **PostgreSQL** : stockage des réclamations.
+- **Matplotlib** : génération des diagrammes statistiques.
+- **Docker et Docker Compose** : conteneurisation et exécution de l'application.
 - **Visual Studio Code** : environnement de développement.
 
 ## 🐳 Environnement de développement
 
-Le projet sera développé avec Visual Studio Code et exécuté à l'aide de Docker.
+Le projet est développé avec Visual Studio Code et exécuté à l'aide de Docker.
 
-Docker permettra de regrouper les composants nécessaires au fonctionnement de l'application et de faciliter son lancement dans un environnement cohérent.
+Docker permet de regrouper les composants nécessaires au fonctionnement de l'application, notamment le backend et la base de données PostgreSQL, et de faciliter son lancement dans un environnement cohérent.
 
 ## 🚀 Résultat attendu
 
-À la fin du projet, nous aurons un site web permettant aux citoyens de :
+Le projet permet aux citoyens de :
 
 - Déposer facilement leurs réclamations.
 - Obtenir automatiquement la catégorie de leur réclamation.
+- Retrouver leurs réclamations enregistrées dans la base de données.
 - Recevoir une confirmation après la soumission.
 
-Le système contribuera à simplifier l'organisation et le traitement des réclamations des citoyens.
+Le système contribue à simplifier l'organisation et le traitement des réclamations des citoyens.
 
 ## 🔮 Perspectives d'amélioration
 
-- Ajouter une base de données pour enregistrer les réclamations. 
-- Développer un tableau de bord avec des statistiques.
+- Développer un tableau de bord avec des statistiques intégrées au site web.
+- Ajouter un système de suivi de l'état des réclamations.
+- Améliorer les performances du modèle de classification.
 
+## 🚀 Lancement du projet
+
+```bash
+# Construire et démarrer le projet
+docker compose up --build -d
+
+# Vérifier les conteneurs
+docker compose ps
+
+# Générer les diagrammes statistiques
+docker compose exec reclamations python -m app.model.statistics
+
+# Arrêter le projet
+docker compose down
+```
+
+**Application web :** http://localhost:8000
+
+**Documentation API :** http://localhost:8000/docs
 
 ## 📌 Conclusion
 
 Ce projet démontre l'intérêt de l'intelligence artificielle dans l'amélioration des services publics.
 
-Grâce à une interface web intuitive et à la classification automatique, il sera possible de faciliter le dépôt des réclamations, d'améliorer leur organisation et de simplifier leur orientation vers les services concernés.
+Grâce à une interface web intuitive, à la classification automatique et à l'enregistrement des données, il est possible de faciliter le dépôt des réclamations, d'améliorer leur organisation et de simplifier leur orientation vers les services concernés.
 
 ## 📅 Année universitaire
 

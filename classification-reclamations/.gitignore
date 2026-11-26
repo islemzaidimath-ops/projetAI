@@ -1,0 +1,7 @@
+statistiques/
+reclamations_par_categorie.png
+__pycache__/
+*.pyc
+.venv/
+venv/
+.env

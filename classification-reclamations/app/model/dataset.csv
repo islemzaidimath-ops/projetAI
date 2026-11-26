@@ -1,0 +1,76 @@
+text,category
+bus,Transport
+autobus,Transport
+transport,Transport
+metro,Transport
+train,Transport
+taxi,Transport
+retard bus,Transport
+bus en panne,Transport
+transport public,Transport
+station bus,Transport
+chauffeur,Transport
+circulation,Transport
+embouteillage,Transport
+horaire bus,Transport
+manque transport,Transport
+hopital,Santé
+medecin,Santé
+docteur,Santé
+infirmier,Santé
+urgence,Santé
+maladie,Santé
+pharmacie,Santé
+soins medicaux,Santé
+rendez vous medical,Santé
+materiel medical,Santé
+personnel medical,Santé
+service hospitalier,Santé
+ambulance,Santé
+consultation,Santé
+salle attente,Santé
+pollution,Environnement
+dechets,Environnement
+ordures,Environnement
+poubelles,Environnement
+nettoyage,Environnement
+air pollue,Environnement
+eaux usees,Environnement
+pollution sonore,Environnement
+dechets menagers,Environnement
+espaces verts,Environnement
+salete,Environnement
+mauvaises odeurs,Environnement
+collecte dechets,Environnement
+proprete quartier,Environnement
+environnement,Environnement
+administration,Administration
+document administratif,Administration
+carte identite,Administration
+passeport,Administration
+extrait naissance,Administration
+dossier administratif,Administration
+service public,Administration
+papier officiel,Administration
+demande administrative,Administration
+retard dossier,Administration
+acte naissance,Administration
+bureau municipal,Administration
+etat civil,Administration
+autorisation,Administration
+formalite,Administration
+route,Infrastructure
+chaussee,Infrastructure
+trottoir,Infrastructure
+pont,Infrastructure
+lampadaire,Infrastructure
+eclairage public,Infrastructure
+infrastructure,Infrastructure
+route endommagee,Infrastructure
+trou route,Infrastructure
+route degradee,Infrastructure
+panne eclairage,Infrastructure
+signalisation,Infrastructure
+canalisation,Infrastructure
+batiment public,Infrastructure
+voirie,Infrastructure
